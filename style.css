@@ -144,3 +144,18 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do rodapé */
     color: rgb(140, 229, 136);; /* Cor do texto do rodapé */
 }
+
+footer a {
+
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do elemento pai */
+    letter-spacing: 3px;
+    
+}
+
+
+.footer a:hover {
+
+    color: bisque;
+
+}
