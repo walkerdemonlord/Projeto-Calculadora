@@ -1,0 +1,146 @@
+/* Aplicar a fonte em todo o documento */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Definir um fundo com GIF apenas para o body */
+body {
+    background: url('backgroung-matrix.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhorar a visibilidade do texto */
+}
+
+/* Estilos para os itens do nav */
+.nav-itens {
+    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.nav-itens li {
+    margin: 0 30px;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: rgb(140, 229, 136);
+    font-weight: 600;
+}
+
+.nav-logo img {
+    max-width: 300px;
+    height: auto; /* Ajustar conforme necessário */
+}
+
+a:hover {
+
+    color: bisque;
+
+}
+
+/* Estilos para a calculadora */
+.calculator {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 290px; /* Ajusta a largura para melhor alinhamento */
+    margin: 0 auto;
+}
+
+.display input {
+    width: 90%;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #222;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 22px; /* Ajuste o tamanho da fonte para melhor alinhamento */
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #555;
+}
+
+.sidebar {
+    position: fixed;
+    top: 32%;
+    right: 470px;
+    transform: translateY(-50%);
+    background-color: rgba(224, 211, 211, 0.7); /* Fundo semitransparente */
+    width: 30px; /* Largura igual à altura para criar um círculo */
+    height: 30px; /* Largura igual à altura para criar um círculo */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar button {
+    padding: 0; /* Removemos o preenchimento */
+    width: 30px; /* Largura igual à altura para criar um círculo */
+    height: 30px; /* Largura igual à altura para criar um círculo */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sidebar button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Centraliza e mantém a proporção da imagem */
+}
+
+.sidebar:hover {
+    background: rgba(234, 226, 226, 0.8); /* Escurece um pouco quando hover */
+}
+
+.sidebar:hover button {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do botão quando hover */
+}
+
+.footer {
+
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0; /* Adapte o preenchimento conforme necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do rodapé */
+    color: rgb(140, 229, 136);; /* Cor do texto do rodapé */
+}
